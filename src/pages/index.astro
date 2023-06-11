@@ -1,0 +1,38 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<MainLayout>
+  <main>
+    <section
+      class="grid grid-flow-col px-10 py-64 text-white"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.discordapp.com/attachments/1014690669228470322/1086668402166341743/2023-03-18_23.11.23.png);"
+    >
+      <div>
+        <h1 class="text-5xl my-4">Mystery Network</h1>
+        <h2 class="text-4xl my-3">神秘伺服器</h2>
+      </div>
+      <div>
+        <h1 class="my-4">加入我們</h1>
+        Java: mysterynet.ml
+        <br />
+        Bedrock: mysterynet.ml:19132
+      </div>
+    </section>
+  </main>
+  <section class="bg-white p-10 text-center">
+    <h1 class="my-5">每月玩家2000萬</h1>
+    <img
+      class="inline-block"
+      src="https://cdn.discordapp.com/attachments/1014690669228470322/1058375699758592101/4511fe6e6bb9f10c.png"
+    />
+  </section>
+  <section class="bg-white p-10 text-center">
+    <h1 class="my-5">聯絡我們</h1>
+    <a href="#">Discord</a>
+  </section>
+</MainLayout>
